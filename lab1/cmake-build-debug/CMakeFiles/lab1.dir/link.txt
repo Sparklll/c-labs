@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/lab1.dir/main.c.o CMakeFiles/lab1.dir/sfractional.c.o  -o lab1 -lm 

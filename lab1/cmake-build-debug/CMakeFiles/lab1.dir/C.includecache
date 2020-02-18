@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/main.c
+stdio.h
+-
+sfractional.h
+/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/sfractional.h
+
+/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/sfractional.h
+
