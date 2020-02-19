@@ -4,4 +4,4 @@
 
 int fractional_digit_sum(double number, int n);
 
-#endif //LAB1_SFRACTIONAL_H
+#endif
