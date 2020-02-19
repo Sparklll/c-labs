@@ -123,6 +123,33 @@ lab1/fast:
 	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
 .PHONY : lab1/fast
 
+input_validation/smartinput.o: input_validation/smartinput.c.o
+
+.PHONY : input_validation/smartinput.o
+
+# target to build an object file
+input_validation/smartinput.c.o:
+	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/input_validation/smartinput.c.o
+.PHONY : input_validation/smartinput.c.o
+
+input_validation/smartinput.i: input_validation/smartinput.c.i
+
+.PHONY : input_validation/smartinput.i
+
+# target to preprocess a source file
+input_validation/smartinput.c.i:
+	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/input_validation/smartinput.c.i
+.PHONY : input_validation/smartinput.c.i
+
+input_validation/smartinput.s: input_validation/smartinput.c.s
+
+.PHONY : input_validation/smartinput.s
+
+# target to generate assembly for a file
+input_validation/smartinput.c.s:
+	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/input_validation/smartinput.c.s
+.PHONY : input_validation/smartinput.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lab1"
 	@echo "... edit_cache"
+	@echo "... input_validation/smartinput.o"
+	@echo "... input_validation/smartinput.i"
+	@echo "... input_validation/smartinput.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

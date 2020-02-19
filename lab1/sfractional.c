@@ -8,7 +8,7 @@ int fractional_digit_sum(double number, int n) {
     int integer_part = (int) (number * (pow(10, n)));
     int i;
     for (i = 0; i < n; i++) {
-        if(integer_part == 0) {
+        if (integer_part == 0) {
             break;
         }
         digit_sum += integer_part % 10;

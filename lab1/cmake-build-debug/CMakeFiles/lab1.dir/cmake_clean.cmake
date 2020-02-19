@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab1.dir/input_validation/smartinput.c.o"
   "CMakeFiles/lab1.dir/main.c.o"
   "CMakeFiles/lab1.dir/sfractional.c.o"
   "lab1"

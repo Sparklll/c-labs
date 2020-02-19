@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/input validation/smartinput.c">
+			<Option target="lab1"/>
+		</Unit>
+		<Unit filename="/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/input validation/smartinput.h">
+			<Option target="lab1"/>
+		</Unit>
 		<Unit filename="/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/main.c">
 			<Option target="lab1"/>
 		</Unit>

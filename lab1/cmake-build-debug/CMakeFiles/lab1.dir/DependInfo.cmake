@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/input validation/smartinput.c" "/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/cmake-build-debug/CMakeFiles/lab1.dir/input_validation/smartinput.c.o"
   "/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/main.c" "/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/cmake-build-debug/CMakeFiles/lab1.dir/main.c.o"
   "/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/sfractional.c" "/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/cmake-build-debug/CMakeFiles/lab1.dir/sfractional.c.o"
   )

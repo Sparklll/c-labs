@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/input validation/smartinput.h
+stdio.h
+-
+
 /home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/main.c
 stdio.h
 -
 sfractional.h
 /home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/sfractional.h
+input validation/smartinput.h
+/home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/input validation/smartinput.h
 
 /home/eugene_gromadko/Laboratory Works/2 Term/C/c-labs/lab1/sfractional.h
 
