@@ -24,7 +24,7 @@ kilometers. The cost of the order usually includes insurance,
 ```
 # Task 2.2
 
-<h3 align="center"><img src="images/task2.2.png"></h3>
+<h3 align="center"><img src="../images/task2.2.png"></h3>
 
 ```
 Numerically verify the equality, for which, for
