@@ -13,6 +13,6 @@ int main() {
         printf("Incorrect input, try again : ");
     }
     printf("Calculation by library function : sin(x) = %0.6f", sin(x));
-    printf("\nCalculation by custom function : sin(x) = %0.6Lf ",iterative_calc(x, epsilon, &n));
+    printf("\nCalculation by custom function : sin(x) = %0.6f ", iterative_calc(x, epsilon, &n));
     printf("(number of sequence members : %d)",n);
 }
