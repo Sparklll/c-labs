@@ -31,7 +31,6 @@ static int fget_input(char *s, size_t len, FILE *stream) {
     return SUCCESS;
 }
 
-
 int fget_short(short *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
     long v;
@@ -50,7 +49,6 @@ int fget_short(short *value, FILE *stream) {
         return SUCCESS;
     }
 }
-
 
 int fget_ushort(unsigned short *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
@@ -77,7 +75,6 @@ int fget_ushort(unsigned short *value, FILE *stream) {
     }
 }
 
-
 int fget_int(int *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
     long v;
@@ -96,7 +93,6 @@ int fget_int(int *value, FILE *stream) {
         return SUCCESS;
     }
 }
-
 
 int fget_uint(unsigned int *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
@@ -123,7 +119,6 @@ int fget_uint(unsigned int *value, FILE *stream) {
     }
 }
 
-
 int fget_long(long *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
     long v;
@@ -141,7 +136,6 @@ int fget_long(long *value, FILE *stream) {
         return SUCCESS;
     }
 }
-
 
 int fget_ulong(unsigned long *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
@@ -167,7 +161,6 @@ int fget_ulong(unsigned long *value, FILE *stream) {
     }
 }
 
-
 int fget_llong(long long *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
     long long v;
@@ -185,7 +178,6 @@ int fget_llong(long long *value, FILE *stream) {
         return SUCCESS;
     }
 }
-
 
 int fget_ullong(unsigned long long *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
@@ -229,7 +221,6 @@ int fget_float(float *value, FILE *stream) {
     }
 }
 
-
 int fget_double(double *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
     double v;
@@ -247,7 +238,6 @@ int fget_double(double *value, FILE *stream) {
         return SUCCESS;
     }
 }
-
 
 int fget_ldouble(long double *value, FILE *stream) {
     char buffer[BUF_SIZE], *temp;
@@ -267,7 +257,6 @@ int fget_ldouble(long double *value, FILE *stream) {
     }
 }
 
-
 int fget_line(char *s, int len, FILE *stream) {
     if (fgets(s, len, stream) == NULL)
         return EOF;
@@ -279,7 +268,6 @@ int fget_line(char *s, int len, FILE *stream) {
 
     return SUCCESS;
 }
-
 
 int get_short(short *value) {
     return fget_short(value, stdin);
@@ -293,26 +281,21 @@ int get_int(int *value) {
     return fget_int(value, stdin);
 }
 
-
 int get_uint(unsigned int *value) {
     return fget_uint(value, stdin);
 }
-
 
 int get_long(long *value) {
     return fget_long(value, stdin);
 }
 
-
 int get_ulong(unsigned long *value) {
     return fget_ulong(value, stdin);
 }
 
-
 int get_llong(long long *value) {
     return fget_llong(value, stdin);
 }
-
 
 int get_ullong(unsigned long long *value) {
     return fget_ullong(value, stdin);

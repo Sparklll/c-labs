@@ -5,7 +5,7 @@
 int fractional_digit_sum(double number, int n) {
     int digit_sum = 0;
 
-    int integer_part = (int) (number * (pow(10, n)));
+    int integer_part = (int) (number * pow(10, n));
     int i;
     for (i = 0; i < n; i++) {
         if (integer_part == 0) {

@@ -55,8 +55,5 @@ int fget_ldouble(long double *value, FILE *stream);
 
 int fget_line(char *s, int len, FILE *stream);
 
-
-
-
 #endif
 
