@@ -27,8 +27,8 @@ kilometers. The cost of the order usually includes insurance,
 <h3 align="center"><img src="../images/task2.2.png"></h3>
 
 ```
-Numerically verify the equality, for which, for
-given value x, calculate its left side and decomposition,
+Numerically verify the equality. For
+given value x calculate its left side and decomposition
 standing on the right side. For which (n) the expression 
 differs from sin (x) by less than a given (epsilon)
 Test the decomposition for different values of x.
