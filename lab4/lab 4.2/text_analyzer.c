@@ -56,7 +56,7 @@ void analyze_text(text_properties *tp, FILE *text_file) {
                     /* stub */
                 } else {
                     if (current_pos_on_word) {
-                        temp_word_buffer[temp_word_buffer_index] = '\0';
+                        temp_word_buffer[temp_word_buffer_index] = 0;
                         if (strlen(temp_word_buffer) > strlen(longest_word)) {
                             memcpy(longest_word, temp_word_buffer, strlen(temp_word_buffer) + 1);
                         }
@@ -95,7 +95,7 @@ void analyze_text(text_properties *tp, FILE *text_file) {
                         prev_punct_ch == ';'
                             ) {
 
-                        temp_sentence_buffer[temp_sentence_buffer_index] = '\0';
+                        temp_sentence_buffer[temp_sentence_buffer_index] = 0;
                         if (strlen(temp_sentence_buffer) > strlen(longest_sentence)) {
                             memcpy(longest_sentence, temp_sentence_buffer, strlen(temp_sentence_buffer) + 1);
                         }
@@ -105,7 +105,7 @@ void analyze_text(text_properties *tp, FILE *text_file) {
                 }
                 if (current_pos_on_word) {
                     current_pos_on_word = FALSE;
-                    temp_word_buffer[temp_word_buffer_index] = '\0';
+                    temp_word_buffer[temp_word_buffer_index] = 0;
                     if (strlen(temp_word_buffer) > strlen(longest_word)) {
                         memcpy(longest_word, temp_word_buffer, strlen(temp_word_buffer) + 1);
                     }
@@ -128,7 +128,7 @@ void analyze_text(text_properties *tp, FILE *text_file) {
             prev_punct_ch == ';'
                 ) {
 
-            temp_sentence_buffer[temp_sentence_buffer_index] = '\0';
+            temp_sentence_buffer[temp_sentence_buffer_index] = 0;
             if (strlen(temp_sentence_buffer) > strlen(longest_sentence)) {
                 memcpy(longest_sentence, temp_sentence_buffer, strlen(temp_sentence_buffer) + 1);
             }
@@ -137,7 +137,7 @@ void analyze_text(text_properties *tp, FILE *text_file) {
     }
     if (current_pos_on_word) {
         current_pos_on_word = FALSE;
-        temp_word_buffer[temp_word_buffer_index] = '\0';
+        temp_word_buffer[temp_word_buffer_index] = 0;
         if (strlen(temp_word_buffer) > strlen(longest_word)) {
             memcpy(longest_word, temp_word_buffer, strlen(temp_word_buffer) + 1);
         }
