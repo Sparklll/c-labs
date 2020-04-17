@@ -10,7 +10,7 @@ typedef struct node {
 
 typedef struct queue {
     struct node *rear, *front;
-    int size;
+    size_t size;
 } queue;
 
 queue *create_queue();
