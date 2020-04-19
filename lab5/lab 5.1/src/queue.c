@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "queue.h"
+#include "../include/queue.h"
 
 queue *create_queue() {
     queue *queue = malloc(sizeof(struct queue));
@@ -53,7 +53,6 @@ int queue_empty(queue *queue) {
 void delete_queue(queue *queue) {
 
     while (queue->size > 0) {
-        node *temp = queue->front;
         queue_pop(queue);
     }
     free(queue);

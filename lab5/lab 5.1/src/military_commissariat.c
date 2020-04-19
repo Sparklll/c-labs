@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "military_commissariat.h"
+#include "../include/military_commissariat.h"
 
 military_commissariat *create_military_commissariat(int medical_rooms_number) {
     military_commissariat *military_commissariat = malloc(sizeof(struct military_commissariat));
@@ -58,12 +58,19 @@ void left_medical_room(military_commissariat *military_commissariat, conscript *
     conscript->visited_medical_rooms[medical_room_number] = 1;
 
     if (conscript->num_visited_rooms == military_commissariat->num_medical_rooms) {
-        printf("Conscript#%d finished a medical examination. Total time spent %dm\n", conscript->personal_number,
+        printf("Conscript#%d left medical room №%d. Time spent in the room %dm. Status : %d/%d. Medical examination has finished. Total time spent %dm\n",
+               conscript->personal_number,
+               medical_room_number,
+               time_spent,
+               conscript->num_visited_rooms,
+               military_commissariat->num_medical_rooms,
                conscript->total_time_spent);
     } else {
         printf("Conscript#%d left medical room №%d. Time spent in the room %dm. Status : %d/%d.\n",
                conscript->personal_number,
-               medical_room_number, time_spent, conscript->num_visited_rooms,
+               medical_room_number,
+               time_spent,
+               conscript->num_visited_rooms,
                military_commissariat->num_medical_rooms);
     }
 }

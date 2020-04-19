@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "conscript.h"
+#include "../include/conscript.h"
 
 conscript *create_conscript(int personal_number) {
     conscript *conscript = malloc(sizeof(struct conscript));
@@ -20,6 +20,3 @@ conscript *create_conscript(int personal_number) {
 void delete_conscript(conscript *conscript) {
     free(conscript);
 }
-
-
-

@@ -6,8 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "queue/queue.h"
-#include "military сommissariat/military_commissariat.h"
+#include "../include/queue.h"
+#include "../include/military_commissariat.h"
 
 
 int main() {
@@ -42,9 +42,9 @@ int main() {
 
                 if (current_room_spent_time[front_conscript->personal_number] ==
                     front_conscript->last_medical_room_time_spent) {
+                    front_conscript->total_time_spent += front_conscript->last_medical_room_time_spent;
                     left_medical_room(military_commissariat, front_conscript, j,
                                       current_room_spent_time[front_conscript->personal_number]);
-                    front_conscript->total_time_spent += front_conscript->last_medical_room_time_spent;
                     if (front_conscript->num_visited_rooms < military_commissariat->num_medical_rooms) {
                         front_conscript->last_medical_room_time_spent = 0;
                         current_room_spent_time[front_conscript->personal_number] =

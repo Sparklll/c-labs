@@ -1,7 +1,7 @@
 #ifndef MILITARY_COMMISSARIAT_H
 #define MILITARY_COMMISSARIAT_H
 
-#include "../queue/queue.h"
+#include "queue.h"
 
 typedef struct military_commissariat {
     int num_medical_rooms;
