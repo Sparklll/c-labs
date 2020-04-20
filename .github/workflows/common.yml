@@ -1,0 +1,39 @@
+name: c-labs
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  lab5_1:
+    runs-on: [ubuntu-latest]
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install valgrind
+      run: sudo apt-get install valgrind
+    - name: Build
+      run: make build
+      working-directory: ./lab5/lab 5.1
+    - name: Run + Memcheck
+      run: make memcheck
+      working-directory: ./lab5/lab 5.1
+    - name: Clean
+      run: make clean
+      working-directory: ./lab5/lab 5.1
+      
+  lab5_2:
+    runs-on: [ubuntu-latest]
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install valgrind
+      run: sudo apt-get install valgrind
+    - name: Build
+      run: make build
+      working-directory: ./lab5/lab 5.2
+    - name: Run + Memcheck
+      run: make memcheck
+      working-directory: ./lab5/lab 5.2
+    - name: Clean
+      run: make clean
+      working-directory: ./lab5/lab 5.2
