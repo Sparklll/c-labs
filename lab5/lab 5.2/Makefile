@@ -4,14 +4,14 @@
 # ------------------------------------------------
 # TODO: Header dependencies
 # ------------------------------------------------
-CC 	= gcc
-CFLAGS	= -std=c90 -Wall
+CC     = gcc
+CFLAGS = -std=c90 -Wall
 
 
-INCDIR	= include/
-SRCDIR	= src/
-OBJDIR	= obj/
-BINDIR	= bin/
+INCDIR = include/
+SRCDIR = src/
+OBJDIR = obj/
+BINDIR = bin/
 
 
 SOURCES  = $(wildcard $(SRCDIR)*.c)
@@ -20,7 +20,7 @@ OBJECTS  = $(patsubst $(SRCDIR)%.c, $(OBJDIR)%.o, $(SOURCES))
 
 
 APP_NAME = odd_even_numbers
-BIN	 = $(addprefix $(BINDIR), $(APP_NAME))
+BIN      = $(addprefix $(BINDIR), $(APP_NAME))
 
 
 
