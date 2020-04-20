@@ -4,12 +4,12 @@
 # ------------------------------------------------
 # TODO: Header dependencies
 # ------------------------------------------------
-CC 			= gcc
-CFLAGS 	= -std=c90 -Wall
+CC 	= gcc
+CFLAGS	= -std=c90 -Wall
 
 
-INCDIR  = include/
-SRCDIR 	= src/
+INCDIR	= include/
+SRCDIR	= src/
 OBJDIR	= obj/
 BINDIR	= bin/
 
@@ -19,8 +19,8 @@ INCLUDES = $(wildcard $(INCDIR)*.h)
 OBJECTS  = $(patsubst $(SRCDIR)%.c, $(OBJDIR)%.o, $(SOURCES))
 
 
-APP_NAME	= military_commisariat
-BIN		  	= $(addprefix $(BINDIR), $(APP_NAME))
+APP_NAME = military_commisariat
+BIN	 = $(addprefix $(BINDIR), $(APP_NAME))
 
 
 
@@ -41,7 +41,7 @@ $(OBJECTS): $(OBJDIR)%.o : $(SRCDIR)%.c
 
 .PHONY: run
 run:
-	./$(BIN)
+	$(BIN)
 
 
 
