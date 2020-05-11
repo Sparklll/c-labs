@@ -4,7 +4,8 @@ on:
     branches: [ master ]
 
 jobs:
-  lab5_1:
+
+  lab5:
     runs-on: [ubuntu-latest]
     
     steps:
@@ -13,15 +14,15 @@ jobs:
       run: sudo apt-get install valgrind
     - name: Build
       run: make build
-      working-directory: ./lab5/lab 5.1
-    - name: Run + Memcheck
+      working-directory: ./lab5/
+    - name: Run(Test input) + Memcheck
       run: make memcheck
-      working-directory: ./lab5/lab 5.1
+      working-directory: ./lab5/
     - name: Clean
       run: make clean
-      working-directory: ./lab5/lab 5.1
+      working-directory: ./lab5/
       
-  lab5_2:
+lab6:
     runs-on: [ubuntu-latest]
     
     steps:
@@ -30,10 +31,24 @@ jobs:
       run: sudo apt-get install valgrind
     - name: Build
       run: make build
-      working-directory: ./lab5/lab 5.2
-    - name: Run + Memcheck
+      working-directory: ./lab6/
+    - name: Run(Test input) + Memcheck
       run: make memcheck
-      working-directory: ./lab5/lab 5.2
+      working-directory: ./lab6/
     - name: Clean
       run: make clean
-      working-directory: ./lab5/lab 5.2
+      working-directory: ./lab6/
+      
+lab7:
+    runs-on: [ubuntu-latest]
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: make build
+      working-directory: ./lab7/
+    - name: Clean
+      run: make clean
+      working-directory: ./lab7/
+
+      
