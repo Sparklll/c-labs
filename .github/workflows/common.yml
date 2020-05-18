@@ -5,7 +5,7 @@ on:
 
 jobs:
 
-lab5:
+  lab5:
     runs-on: [ubuntu-latest]
     
     steps:
@@ -22,7 +22,7 @@ lab5:
       run: make clean
       working-directory: ./lab5
       
-lab6:
+  lab6:
     runs-on: [ubuntu-latest]
     
     steps:
@@ -39,7 +39,7 @@ lab6:
       run: make clean
       working-directory: ./lab6
       
-lab7:
+  lab7:
     runs-on: [ubuntu-latest]
     
     steps:
