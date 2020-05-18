@@ -3,9 +3,7 @@
 
 
 ![c-labs](https://github.com/Sparklll/c-labs/workflows/c-labs/badge.svg)
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="182" height="20"><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="182" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="139" height="20" fill="#555"/><rect x="139" width="43" height="20" fill="#007ec6"/><rect width="182" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="705" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1290">Completion percentage</text><text x="705" y="140" transform="scale(.1)" textLength="1290">Completion percentage</text><text x="1595" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="330">100%</text><text x="1595" y="140" transform="scale(.1)" textLength="330">100%</text></g></svg>
-
+<img src="https://img.shields.io/badge/Completion%20percentage-100%25-blue">
 
 Task 1.2 (6)  &nbsp;&nbsp;&#9989; <br>
 Task 2.1 (6)  &nbsp;&nbsp;&#9989; <br>
